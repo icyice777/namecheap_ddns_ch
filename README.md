@@ -1,7 +1,6 @@
-# Namecheap DDNS
-[Docker Hub Page](https://hub.docker.com/repository/docker/edchamberlain/namecheap_ddns/general)
+# Namecheap DDNS ch
 
-This container is available on unRAID community Applications
+Forked from [EdwardChamberlain/namecheap_ddns](https://github.com/EdwardChamberlain/namecheap_ddns)
 
 This simple container will automatically update a namecheap dynamic dns domain through GET requests. This container checks your public IP every 3 seconds and sends an update if a change is detected. 
 
