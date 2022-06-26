@@ -1,4 +1,4 @@
-# Namecheap DDNS ch
+# Namecheap DDNS mod
 
 Forked from [EdwardChamberlain/namecheap_ddns](https://github.com/EdwardChamberlain/namecheap_ddns) for enabling/enforcing you specifing a URL to get IP for updating.
 
