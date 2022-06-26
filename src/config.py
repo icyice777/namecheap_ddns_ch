@@ -6,4 +6,4 @@ logging.basicConfig(
     format="%(asctime)s::%(levelname)s::%(filename)s::%(message)s",
 )
 
-required_vars = {'APP_DOMAIN', 'APP_HOST', 'APP_PASSWORD'}
+required_vars = {'APP_DOMAIN', 'APP_HOST', 'APP_PASSWORD', 'APP_GETTING_IP_URL'}
