@@ -2,6 +2,8 @@
 
 Forked from [EdwardChamberlain/namecheap_ddns](https://github.com/EdwardChamberlain/namecheap_ddns) for enabling/enforcing you specifing a URL to get IP for updating.
 
+[Docker Hub Page](https://hub.docker.com/repository/docker/icyice777/namecheap_ddns_mod/general)
+
 This simple container will automatically update a namecheap dynamic dns domain through GET requests. This container checks your IP from specified URL every 60 seconds and sends an update if a change is detected. 
 
 You MUST provide the required enviroment variables: `APP_HOST`, `APP_DOMAIN`, `APP_PASSWORD`, and `APP_GETTING_IP_URL`. You MUST create an 'A + Dynamic DNS' record for the host which you wish to update and enable Dynamic DNS in the manage page of your domain. Your APP_PASSWORD must be your Dynamic DNS password from namecheap and NOT your Namecheap password.
