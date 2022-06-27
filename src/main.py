@@ -15,7 +15,7 @@ def get_ip(url):
         raise Exception(f"Cannot match valid IP address from response of {url}")
     else:
         ip = re.search(r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}", res.text).group(0)
-        logging.info(f"IP {ip} from {url} getting successfully")
+        logging.debug(f"IP {ip} from {url} getting successfully")
     
     return ip
 
@@ -70,6 +70,8 @@ while True:
         continue
     
     if new_wan_ip != wan_ip:
+
+        logging.info(f"IP change to {new_wan_ip}")
 
         wan_ip = new_wan_ip
         
