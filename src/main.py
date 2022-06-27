@@ -73,16 +73,17 @@ while True:
 
         logging.info(f"IP change to {new_wan_ip}")
 
-        wan_ip = new_wan_ip
-        
         for i in targets:
             try:
                 update_ip(
                     host=i[0],
                     domain=i[1],
                     password=i[2],
-                    wan_ip=wan_ip,
+                    wan_ip=new_wan_ip,
                 )
+                
+                wan_ip = new_wan_ip
+        
             except Exception as e:
                 logging.error(e)
 
